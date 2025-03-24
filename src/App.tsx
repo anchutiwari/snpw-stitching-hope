@@ -10,6 +10,9 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Programs from "./pages/Programs";
 import GetInvolved from "./pages/GetInvolved";
+import Volunteer from "./pages/Volunteer";
+import Partnership from "./pages/Partnership";
+import DonateMaterials from "./pages/DonateMaterials";
 import Donate from "./pages/Donate";
 import SuccessStories from "./pages/SuccessStories";
 import Blog from "./pages/Blog";
@@ -34,6 +37,9 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/programs" element={<Programs />} />
                 <Route path="/get-involved" element={<GetInvolved />} />
+                <Route path="/volunteer" element={<Volunteer />} />
+                <Route path="/partnership" element={<Partnership />} />
+                <Route path="/donate-materials" element={<DonateMaterials />} />
                 <Route path="/success-stories" element={<SuccessStories />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/events" element={<Events />} />
