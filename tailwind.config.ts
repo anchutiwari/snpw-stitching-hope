@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,8 +62,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom SNPW Theme Colors
 				snpw: {
+					green: {
+						light: '#4CAF50',
+						DEFAULT: '#008000',
+						dark: '#005700'
+					},
+					blue: {
+						light: '#3949AB',
+						DEFAULT: '#1A237E',
+						dark: '#0D1642'
+					},
+					white: {
+						DEFAULT: '#FFFFFF'
+					},
 					pink: {
 						light: '#FFE5EC',
 						DEFAULT: '#FF92A5',

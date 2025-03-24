@@ -53,9 +53,17 @@ const Header = () => {
       <div className="container-padding flex items-center justify-between">
         {/* Logo */}
         <NavLink to="/" className="flex items-center space-x-2">
-          <span className="text-xl md:text-2xl font-bold text-snpw-pink">SNPW</span>
-          <span className="hidden md:inline-block h-5 w-px bg-gray-300"></span>
-          <span className="hidden md:block text-sm text-gray-600">Stitching New Paths for Women</span>
+          <div className="h-10 w-10 relative">
+            <img 
+              src="/lovable-uploads/0eb8d14e-a11e-45a1-b579-f83f7b594790.png" 
+              alt="SNPWS Logo" 
+              className="h-full w-full object-contain"
+            />
+          </div>
+          <div className="flex flex-col items-start">
+            <span className="text-xl md:text-2xl font-bold text-snpw-blue">SNPWS</span>
+            <span className="hidden md:block text-xs text-gray-600">Sindhuther Public Welfare Society</span>
+          </div>
         </NavLink>
 
         {/* Desktop Navigation */}
@@ -67,15 +75,15 @@ const Header = () => {
               className={({ isActive }) => 
                 `nav-link text-sm font-medium transition-colors ${
                   isActive 
-                    ? 'text-snpw-pink active' 
-                    : 'text-gray-900 hover:text-snpw-pink'
+                    ? 'text-snpw-green active' 
+                    : 'text-gray-900 hover:text-snpw-green'
                 }`
               }
             >
               {link.label}
             </NavLink>
           ))}
-          <Button className="fancy-button bg-snpw-pink hover:bg-snpw-pink-dark text-white">Donate</Button>
+          <Button className="fancy-button bg-snpw-green hover:bg-snpw-green-dark text-white">Donate</Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -102,7 +110,7 @@ const Header = () => {
                 to={link.path}
                 className={({ isActive }) => 
                   `text-lg font-medium py-2 border-b border-gray-100 ${
-                    isActive ? 'text-snpw-pink' : 'text-gray-900'
+                    isActive ? 'text-snpw-green' : 'text-gray-900'
                   }`
                 }
                 onClick={toggleMobileMenu}
@@ -112,7 +120,7 @@ const Header = () => {
             ))}
           </nav>
           <div className="mt-auto">
-            <Button className="w-full fancy-button bg-snpw-pink hover:bg-snpw-pink-dark text-white">Donate</Button>
+            <Button className="w-full fancy-button bg-snpw-green hover:bg-snpw-green-dark text-white">Donate</Button>
           </div>
         </div>
       </div>
