@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="container-padding relative z-10 pt-20 pb-16 flex flex-col-reverse lg:flex-row items-center">
         {/* Text Content */}
         <div className="lg:w-1/2 text-center lg:text-left lg:pr-8 mt-12 lg:mt-0">
-          <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-snpw-green-light text-snpw-green animate-fade-in-left" style={{ animationDelay: '0.3s' }}>Empowerment Through Skills</div>
+          <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-snpw-green text-white animate-fade-in-left" style={{ animationDelay: '0.3s' }}>Empowerment Through Skills</div>
           <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in-left" style={{ animationDelay: '0.4s' }}>
             <span className="text-snpw-blue">SNPWS</span> – Sindhuther Public Welfare Society
           </h1>

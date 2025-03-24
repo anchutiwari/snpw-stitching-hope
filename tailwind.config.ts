@@ -64,7 +64,7 @@ export default {
 				},
 				snpw: {
 					green: {
-						light: '#4CAF50',
+						light: '#39a339',
 						DEFAULT: '#008000',
 						dark: '#005700'
 					},
@@ -75,26 +75,6 @@ export default {
 					},
 					white: {
 						DEFAULT: '#FFFFFF'
-					},
-					pink: {
-						light: '#FFE5EC',
-						DEFAULT: '#FF92A5',
-						dark: '#E5556E'
-					},
-					orange: {
-						light: '#FFECD9',
-						DEFAULT: '#FF9F5A', 
-						dark: '#E57A38'
-					},
-					yellow: {
-						light: '#FFF8E0',
-						DEFAULT: '#FFD166',
-						dark: '#E5B84A'
-					},
-					teal: {
-						light: '#E0FBFC',
-						DEFAULT: '#40BFBD',
-						dark: '#2A8A88'
 					}
 				}
 			},

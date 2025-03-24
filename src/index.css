@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,8 +23,8 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 237 13.8% 42.9%;
 
-    --accent: 120 54% 49%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 0% 100%;
+    --accent-foreground: 120 100% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -54,8 +55,8 @@
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 0 0% 100%;
+    --accent-foreground: 120 100% 25%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -83,7 +84,7 @@
 
 @layer components {
   .story-link {
-    @apply relative inline-block after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-snpw-pink after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+    @apply relative inline-block after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-snpw-blue after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
   }
 
   .hover-scale {
@@ -103,7 +104,7 @@
   }
 
   .chip {
-    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-snpw-pink-light text-snpw-pink-dark;
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-snpw-green-light text-white;
   }
 }
 
@@ -146,7 +147,7 @@
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: theme('colors.snpw.pink.DEFAULT');
+  background-color: #008000;
   transition: width 0.3s ease;
 }
 
@@ -176,6 +177,6 @@
 /* Form focus styles */
 input:focus-visible, 
 textarea:focus-visible {
-  outline: 2px solid theme('colors.snpw.pink.DEFAULT');
+  outline: 2px solid #008000;
   outline-offset: 2px;
 }

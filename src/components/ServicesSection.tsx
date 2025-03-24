@@ -26,25 +26,25 @@ const ServicesSection = () => {
   
   const services = [
     {
-      icon: <Scissors size={36} className="text-snpw-pink" />,
+      icon: <Scissors size={36} className="text-snpw-white" />,
       title: "Sewing & Tailoring Training",
       description: "Comprehensive hands-on learning programs that teach essential sewing skills, from basic techniques to advanced design.",
       delay: "0.1s",
-      bgClass: "from-snpw-pink-light to-white"
+      bgClass: "from-snpw-green to-snpw-green-light"
     },
     {
-      icon: <Briefcase size={36} className="text-snpw-orange" />,
+      icon: <Briefcase size={36} className="text-snpw-white" />,
       title: "Entrepreneurship Support",
       description: "Business guidance, mentorship, and resources to help women transform their sewing skills into profitable ventures.",
       delay: "0.3s",
-      bgClass: "from-snpw-orange-light to-white"
+      bgClass: "from-snpw-blue to-snpw-blue-light"
     },
     {
-      icon: <Scale size={36} className="text-snpw-teal" />,
+      icon: <Scale size={36} className="text-snpw-white" />,
       title: "Legal & Financial Assistance",
       description: "Expert consultation and support for business registration, financial planning, and access to microfinance opportunities.",
       delay: "0.5s",
-      bgClass: "from-snpw-teal-light to-white"
+      bgClass: "from-snpw-green to-snpw-green-light"
     }
   ];
 
@@ -56,7 +56,7 @@ const ServicesSection = () => {
       <div className="container-padding relative z-10">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="chip animate-fade-in">What We Do</div>
+          <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-snpw-green text-white animate-fade-in">What We Do</div>
           <h2 className="text-3xl md:text-4xl font-bold mt-4 animate-fade-in" style={{ animationDelay: '0.1s' }}>
             Our Core Services
           </h2>
@@ -73,14 +73,14 @@ const ServicesSection = () => {
               className={`relative overflow-hidden rounded-xl shadow-md hover-scale transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
               style={{ transitionDelay: service.delay }}
             >
-              <div className={`absolute inset-0 bg-gradient-to-b ${service.bgClass} opacity-30`}></div>
+              <div className={`absolute inset-0 bg-gradient-to-b ${service.bgClass} opacity-90`}></div>
               <div className="relative z-10 p-8">
-                <div className="bg-white rounded-xl p-4 w-16 h-16 flex items-center justify-center shadow-sm mb-6">
+                <div className="bg-white/20 rounded-xl p-4 w-16 h-16 flex items-center justify-center shadow-sm mb-6">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className="text-gray-600 mb-6">{service.description}</p>
-                <a href="/programs" className="story-link inline-flex items-center text-gray-800 font-medium hover:text-snpw-pink transition-colors">
+                <h3 className="text-xl font-bold mb-3 text-white">{service.title}</h3>
+                <p className="text-white/90 mb-6">{service.description}</p>
+                <a href="/programs" className="inline-flex items-center text-white font-medium hover:text-snpw-white transition-colors">
                   Learn More
                   <ArrowRight size={16} className="ml-1" />
                 </a>
@@ -91,7 +91,7 @@ const ServicesSection = () => {
         
         {/* CTA */}
         <div className="text-center mt-12">
-          <a href="/programs" className="inline-flex items-center fancy-button bg-snpw-pink hover:bg-snpw-pink-dark text-white px-6 py-3 rounded-lg shadow-md">
+          <a href="/programs" className="inline-flex items-center fancy-button bg-snpw-blue hover:bg-snpw-blue-dark text-white px-6 py-3 rounded-lg shadow-md">
             Explore Our Programs
             <ArrowRight size={18} className="ml-2" />
           </a>
